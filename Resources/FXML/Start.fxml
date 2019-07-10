@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1400.0" style="-fx-background-color: #50729F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.StartController">
+    <children>
+      <BorderPane layoutX="219.0" layoutY="133.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="635.0" prefWidth="963.0" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="219.0">
+         <center>
+            <Pane prefHeight="502.0" prefWidth="908.0" BorderPane.alignment="CENTER">
+               <children>
+                    <ImageView fx:id="imageRight" fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../Images/diceman.jpg" />
+                        </image>
+                    </ImageView>
+                    <Text layoutX="262.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dice Game" textAlignment="CENTER" wrappingWidth="444.5">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="68.0" />
+                        </font>
+                    </Text>
+                    <Button layoutX="415.0" layoutY="196.0" mnemonicParsing="false" onMouseClicked="#start" prefHeight="67.0" prefWidth="139.0" text="Play">
+                        <font>
+                            <Font name="Comic Sans MS" size="25.0" />
+                        </font>
+                    </Button>
+                    <ImageView fx:id="imageLeft" fitHeight="150.0" fitWidth="200.0" layoutX="726.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../Images/diceman.jpg" />
+                        </image>
+                    </ImageView>
+                  <Text layoutX="379.0" layoutY="604.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Made by Elias Steiner for GiBMIT Pratteln" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+    </children>
+</AnchorPane>

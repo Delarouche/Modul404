@@ -1,0 +1,7 @@
+AnchorPane{
+    -fx-background-image: url("table.jpg");
+    -fx-background-repeat: none;
+    -fx-background-size: contain;
+    -fx-background-position: center center;
+
+}

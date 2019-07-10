@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1400.0" style="-fx-background-color: #50729F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.GameController">
+   <top>
+      <HBox fx:id="playerView" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="600.0" style="-fx-border-color: black; -fx-border-width: 0 0 2 0;" BorderPane.alignment="TOP_LEFT" />
+   </top>
+   <bottom>
+      <HBox fx:id="controllButtons" alignment="CENTER" prefHeight="174.0" prefWidth="1400.0" spacing="20.0" style="-fx-border-width: 2 0 0 0; -fx-border-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="rollBtn" mnemonicParsing="false" onAction="#rollDie" text="Roll " textAlignment="RIGHT" />
+            <Button fx:id="nextPlayerBtn" mnemonicParsing="false" onAction="#endTurn" text="Next Player" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox fx:id="but" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="startScreen" alignment="CENTER" prefHeight="333.0" prefWidth="1400.0" spacing="20.0">
+               <children>
+                  <Text fill="#433939" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the Dice Game" textAlignment="CENTER" wrappingWidth="541.04296875">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Each Player can roll  a Dice. If the Result is even he can either run again or save his points for the Round. If the player rolls again and it's uneven all points are lost. This can be repeated untill the max Dicerols per round is reached. After the Set amount of Rounds the player with the most points wins" wrappingWidth="526.146484375">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Text>
+                  <Button mnemonicParsing="false" onAction="#startGame" text="Start the Game" />
+               </children>
+            </VBox>
+            <Text fx:id="playerInfo" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font></Text>
+            <HBox fx:id="diceView" alignment="CENTER" prefHeight="142.0" prefWidth="600.0" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

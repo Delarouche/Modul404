@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1400.0" style="-fx-background-color: #50729F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.GameSetupController">
+   <children>
+      <BorderPane layoutX="490.0" layoutY="126.0" prefHeight="648.0" prefWidth="420.0">
+         <center>
+            <VBox prefHeight="505.0" prefWidth="534.0" BorderPane.alignment="TOP_LEFT">
+               <children>
+                  <HBox fx:id="roundBox" alignment="CENTER" prefHeight="41.0" prefWidth="234.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="192.0" text="How many Rounds" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="26.0" prefWidth="913.0">
+                     <children>
+                        <Text fx:id="errorRounds" fill="#ff0404" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="diceBox" alignment="CENTER" prefHeight="43.0" prefWidth="258.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="192.0" text="How long will a Round be?">
+                           <HBox.margin>
+                              <Insets top="2.0" />
+                           </HBox.margin></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="913.0">
+                     <children>
+                        <Text fx:id="errorDice" fill="#ff0404" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#start" text="Start Game" textAlignment="CENTER" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <top>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" layoutX="33.0" layoutY="29.0" prefHeight="143.0" prefWidth="355.0" text="Game Setup" textAlignment="CENTER" textFill="#c93e3e">
+                     <font>
+                        <Font name="Freestyle Script" size="88.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
